@@ -17,6 +17,7 @@ producer -> exchange -> queue -> consumer
 
 ## Build Image
 To create an image execute following command in root directory of this project:
+
 `docker build -t chat:1.0 .`
 
 ## Deploy
