@@ -1,0 +1,34 @@
+version: "3"
+services:
+  chat:
+    image: chat:1.0
+    deploy:
+      mode: global
+    ports:
+      - 3000:3000
+    environment:
+      - SCALABLE=true
+    networks:
+      - webnet
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    networks:
+      - webnet
+  rabbit:
+    image: rabbitmq:3.7.4-alpine
+    ports:
+      - 15672:15672
+      - 5672:5672
+    deploy:
+      replicas: 1
+    networks:
+      - webnet
+networks:
+  webnet:
