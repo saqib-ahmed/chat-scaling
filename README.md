@@ -16,11 +16,11 @@ To deploy the image with [rabbitMQ](https://hub.docker.com/_/rabbitmq/) and [vis
 
 `docker swarm init`
 
-Then simply execute
+A single node swarm will serve the purpose of demonstration. Then simply execute
 
 `docker stack deploy -c docker-compose.yml test`
 
-That's it. It will start the service at port `3000`. You can see the visualizer at port `8080`. To see the services running, execute
+It will start the chat application at port `3000`. You can see the visualizer at port `8080`. It will take around 10-20 seconds for the whole stack to become fully available. To see the services' status, execute
 
 `docker service ls`
 
