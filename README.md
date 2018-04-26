@@ -39,9 +39,11 @@ Finally execute following command to build the image:
 
 ### Demo
 You can see the demonstration of the chat from different host containers in following animation:
-
-[!animated gif](https://github.com/saqibahmed515/chat-scaling/blob/master/demo/chat-scaling.gif)
+<p align="center">
+<img src="https://github.com/saqibahmed515/chat-scaling/blob/master/demo/chat-scaling.gif">
+</p>
 
 The deployment has following components in this case:
 
-[!deployment stack](https://github.com/saqibahmed515/chat-scaling/blob/master/demo/visualizer.png)
+<p align="center">
+<img src="https://github.com/saqibahmed515/chat-scaling/blob/master/demo/visualizer.png" width="30%" height="50%"></p>
