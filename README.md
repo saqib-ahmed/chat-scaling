@@ -36,3 +36,12 @@ Then copy the resulting directory `bower_components` in the [public](https://git
 Finally execute following command to build the image:
 
 `docker build -t saqibahmed515/chat:1.0 .`
+
+### Demo
+You can see the demonstration of the chat from different host containers in following animation:
+
+[!animated gif](https://github.com/saqibahmed515/chat-scaling/blob/master/demo/chat-scaling.gif)
+
+The deployment has following components in this case:
+
+[!deployment stack](https://github.com/saqibahmed515/chat-scaling/blob/master/demo/visualizer.png)
