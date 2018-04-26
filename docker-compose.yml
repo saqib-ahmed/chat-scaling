@@ -1,9 +1,9 @@
 version: "3"
 services:
   chat:
-    image: chat:1.0
+    image: saqibahmed515/chat:1.0
     deploy:
-      mode: global
+      replicas: 2
     ports:
       - 3000:3000
     environment:
